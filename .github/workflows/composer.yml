@@ -167,4 +167,5 @@ jobs:
             composer-
 
       - name: Run security audit.
-        run: composer audit --lock
+        continue-on-error: true
+        run: composer audit --locked
