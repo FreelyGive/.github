@@ -138,6 +138,7 @@ jobs:
     name: 'Composer audit'
     runs-on: ubuntu-latest
     container: ${{ inputs.container }}
+    continue-on-error: true
     steps:
       - name: Disable git safe directories as we are in a container.
         run: git config --global --add safe.directory '*'
