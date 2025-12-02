@@ -168,4 +168,4 @@ jobs:
             composer-
 
       - name: Run security audit.
-        run: composer audit --lock
+        run: composer audit --locked
